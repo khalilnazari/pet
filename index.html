@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- tailwind css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+    <!-- tailwind js -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Pet | Tailwind</title>
 </head>
@@ -45,7 +45,7 @@
 
 
     <!-- features -->
-    <section class="features py-16 px-10 bg-gray-700 text-gray-200 text-center">
+    <section class="features py-16 px-10 bg-gray-100 text-gray-800 text-center">
         <p class="mb-16 text-4xl">Featured Pets</p>
         <div class="md:flex">
             <div class="mr-2 md:mt-8 mt-0">
@@ -63,11 +63,27 @@
             <div class="mr-2">
                 <img class="w-full rounded mb-4 border-solid border-2 border-gary-200" src="https://images.pexels.com/photos/3726314/pexels-photo-3726314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                 <p>Cute Pet!</p>
+
+                <button class="btn-primary">Go Ahead </button>
             </div>
         </div>
     </section>
 
     <!-- footer -->
-    <footer></footer>
+    <footer class="bg-slate-800 py-20 px-10 sm:flex justify-between ">
+        <!-- left -->
+        <div class="sm:w-1/2">
+            <h3 class="text-2xl mb-3 text-slate-300">Join the newsletter</h3>
+            <form action="" class="flex">
+                <input type="email" placeholder="Enter your email" class="rounded-l w-full p-2 text-spade-800 outline-none focus:bg-slate-200">
+                <button type="submit" class="rounded-r bg-green-300 px-4 py-2 text-slate-800 hover:bg-green-400">Send</button>
+            </form>
+        </div>
+
+        <!-- right -->
+        <div class="text-slate-300 md:flex items-center mt-8 text-center">
+            Copyright &copy; pet 2022 
+        </div>
+    </footer>
 </body>
 </html>
